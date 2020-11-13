@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS `adjectives` (
   `adj` varchar(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
-INSERT INTO `adjectives` (`id`, `adj`) VALUES
+INSERT INTO `adjectives` (`id`, `name`) VALUES
 (1, 'Abandoned\r'),
 (2, 'Able\r'),
 (3, 'Absolute\r'),

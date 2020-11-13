@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS `animals` (
   `nom` varchar(30) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
-INSERT INTO `animals` (`id`, `nom`) VALUES
+INSERT INTO `nouns` (`id`, `name`) VALUES
 (1, 'Dog\r'),
 (2, 'Puppy\r'),
 (3, 'Turtle\r'),
