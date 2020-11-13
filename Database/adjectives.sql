@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `adjectives`;
 CREATE TABLE IF NOT EXISTS `adjectives` (
   `id` int(5) NOT NULL,
-  `adj` varchar(50) NOT NULL
+  `name` varchar(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 INSERT INTO `adjectives` (`id`, `name`) VALUES

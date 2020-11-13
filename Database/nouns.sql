@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `animals`;
 CREATE TABLE IF NOT EXISTS `animals` (
   `id` int(5) NOT NULL,
-  `nom` varchar(30) NOT NULL
+  `name` varchar(30) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 INSERT INTO `nouns` (`id`, `name`) VALUES
