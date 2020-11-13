@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `animals`;
-CREATE TABLE IF NOT EXISTS `animals` (
+DROP TABLE IF EXISTS `nouns`;
+CREATE TABLE IF NOT EXISTS `nouns` (
   `id` int(5) NOT NULL,
   `name` varchar(30) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
