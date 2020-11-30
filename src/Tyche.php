@@ -1,8 +1,8 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 $server = "localhost";
-$databaseUsername = "arthur";
-$databasePassword = "arthur";
+$databaseUsername = "username";
+$databasePassword = "password";
 $databaseName = "tyche";
 $adjectivesTable = "adjectives";
 $nounsTable = "nouns";
