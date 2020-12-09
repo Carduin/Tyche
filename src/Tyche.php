@@ -18,10 +18,13 @@ try {
     $baseString = chop($adjective). " " . chop($animal);
     $formats = array (
         "readable" => $baseString,
-        "lower" => strtolower($baseString),
-        "lower_underscore" => str_replace(" ", "_", strtolower($baseString)),
         "upper" => strtoupper($baseString),
-        "upper_underscore" => str_replace(" ", "_", strtoupper($baseString))
+        "lower" => strtolower($baseString),
+        "snake_case" => str_replace(" ", "_", strtolower($baseString)),
+        "snake_case_upper" => str_replace(" ", "_", strtoupper($baseString)),
+        "kebab_case" => str_replace(" ", "-", strtolower($baseString)),
+        "pascal_case" => str_replace(" ", "", $baseString),
+        "camel_case" => strtolower(chop($adjective)). chop($animal)
     );
 } catch (Exception $e) {
     $errorCode = $e->getCode();
