@@ -10,7 +10,7 @@ $nounsTable = "nouns";
 $dataBase = new DatabaseConnection($server, $databaseUsername, $databasePassword, $databaseName);
 
 $formats = array();
-$errorCode = "OK";
+$errorCode = 0;
 $errorMessage = "none";
 try {
     $adjective = $dataBase->getRandomRow($adjectivesTable);
@@ -46,19 +46,24 @@ class DatabaseConnection {
   private $connection;
 
   function __construct($server, $username, $password, $db) {
-    $this->connection = mysqli_connect($server, $username, $password, $db);
+    $this->connection = @mysqli_connect($server, $username, $password, $db); // @ to disable warnings
   }
 
   function getRandomRow(string $tableName) {
     $this->checkDatabaseConnectionIsCorrect();
     $query = "SELECT * FROM $tableName ORDER BY RAND() LIMIT 1";
     $result = $this->connection->query($query);
-    return mysqli_fetch_array($result)["name"];
+    if($result) {
+      return mysqli_fetch_array($result)["name"];
+    }
+    else {
+      throw new RuntimeException("Could not fetch a row from $tableName. Check if the table exists.", 2);
+    }
   }
 
   function checkDatabaseConnectionIsCorrect() {
       if (!$this->connection) {
-          throw new RuntimeException("Could not connect to database");
+          throw new RuntimeException("Could not connect to database. Check if your credentials are correct.", 1);
       }
   }
 }
