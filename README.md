@@ -1,12 +1,6 @@
-# Tyché
+# Tyché: a name generator
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/carduin/tyche?color=%236766cc)
-
-<p align="center">
-  <img src="https://github.com/Carduin/Tyche/blob/main/logo.png" alt="Logo Tyché"/>
-</p>
-
-## Qu'est ce que c'est ?
+## Descriptif
 Tyché est une API REST permettant de générer à chaque appel un nom original à donner à des projets non nommés.
 L'API est déployée et utilisable à [cette adresse](https://api.arthurmurillo.com/tyche.php).
 
@@ -17,7 +11,7 @@ L'API est déployée et utilisable à [cette adresse](https://api.arthurmurillo.
   * Modifier dans ``src/Tyche.php`` les variables avec les valeurs idoines pour correspondre aux informations de connexion à la base de données.
 * A l'aide de votre navigateur préféré, ouvrir le script !
 
-## Documentation
+## Fonctionnement
 Dans son fonctionnement normal, l'API renvoie une réponse de cette forme :
 
 ```json
