@@ -1,4 +1,4 @@
-# Tyché: a name generator
+![logo](https://github.com/Carduin/Tyche/blob/main/logo.png)
 
 ## Descriptif
 Tyché est une API REST permettant de générer à chaque appel un nom original à donner à tout ce qui n'en a pas.
