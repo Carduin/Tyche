@@ -1,4 +1,6 @@
-![logo](https://github.com/Carduin/Tyche/blob/main/logo.png)
+<p align="center">
+  <img src="https://github.com/Carduin/Tyche/blob/main/logo.png">
+</p>
 
 ## Descriptif
 Tyché est une API REST permettant de générer à chaque appel un nom original à donner à tout ce qui n'en a pas.
