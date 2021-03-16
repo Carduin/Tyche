@@ -1,7 +1,7 @@
 # Tyché: a name generator
 
 ## Descriptif
-Tyché est une API REST permettant de générer à chaque appel un nom original à donner à des projets non nommés.
+Tyché est une API REST permettant de générer à chaque appel un nom original à donner à tout ce qui n'en a pas.
 L'API est déployée et utilisable à [cette adresse](https://api.arthurmurillo.com/tyche.php).
 
 ## Installation
